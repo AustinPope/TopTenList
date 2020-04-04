@@ -16,7 +16,7 @@ class TopTenList : public IDirectionable
     string title;
 
   public:
-    TopTenList();
+    TopTenList(string);
     void display_forward();
     void display_backward();
     void set_at(int index, Hyperlink link);
