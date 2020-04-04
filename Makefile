@@ -1,6 +1,4 @@
 CC=g++
+CXXFLAGS=-std=c++11
 all:
-	$(CC) -Wfatal-errors *.cpp
-	
-clean:
-	rm a.out
+	$(CC) $(CXXFLAGS) -Wfatal-errors *.cpp
