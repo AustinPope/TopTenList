@@ -8,7 +8,7 @@ using std::cout;
 
 int main()
 {
-    TopTenList* languages = new TopTenList();
+    TopTenList* languages = new TopTenList("Programming Languages");
     Gallery* emoticons = new Gallery();
     Hyperlink cpp;
 
@@ -48,13 +48,12 @@ int main()
     emoticons->add(":()","Monkey");
 
     emoticons->display_backward();
+
+    cout << "Top Ten " << languages->get_title() << std::endl;
     languages->display_forward();
 
-
-
-    cout<<"Top Ten "<<languages->get_title()<<"\n";
-
-    languages->display_backward();
+    delete languages;
+    delete emoticons;
 
     return 0;
 }
